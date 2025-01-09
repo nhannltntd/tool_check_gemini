@@ -117,7 +117,13 @@
         .button-container {
             display: flex;
             justify-content: center;
-            margin-top: 2rem;
+            position: fixed;
+            bottom: 1rem;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 100;
+            padding: 1rem;
+            width: fit-content;
         }
 
         button {
@@ -133,11 +139,13 @@
             display: flex;
             align-items: center;
             gap: 0.5rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
         }
 
         button:hover {
             background-color: var(--accent-hover);
             transform: translateY(-1px);
+            box-shadow: 0 6px 8px -1px rgba(0, 0, 0, 0.15), 0 3px 6px -1px rgba(0, 0, 0, 0.1);
         }
 
         button:active {
@@ -214,6 +222,10 @@
 
         ::-webkit-scrollbar-thumb:hover {
             background: var(--accent-hover);
+        }
+
+        #key-inputs {
+            margin-bottom: 5rem;
         }
     </style>
 </head>
